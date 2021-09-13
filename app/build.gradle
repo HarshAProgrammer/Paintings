@@ -19,7 +19,7 @@ android {
 
 
     defaultConfig {
-        applicationId "com.rackluxury.ferrari"
+        applicationId "com.rackluxury.paintings"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 3
