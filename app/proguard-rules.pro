@@ -6,5 +6,5 @@
 
 
 -keep class com.rackluxury.paintings.* {*;}
-#-keep class com.rackluxury.ferrari.Request {*;}
+#-keep class com.rackluxury.paintings.Request {*;}
 

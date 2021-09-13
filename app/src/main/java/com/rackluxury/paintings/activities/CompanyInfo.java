@@ -37,7 +37,7 @@ public class CompanyInfo extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
         if(getSupportActionBar() != null){
-            getSupportActionBar().setTitle("Ferrari Inc.");
+            getSupportActionBar().setTitle("Paintings Inc.");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
