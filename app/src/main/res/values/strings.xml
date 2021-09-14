@@ -5,7 +5,7 @@
     <string name="favourite">Favourite</string>
     <string name="footer">Footer</string>
     <string name="red_heart">Favourite</string>
-    <string name="paintings_inc">Paintings Inc.</string>
+    <string name="paintings">Expensive Paintings</string>
     <string name="login">Login</string>
     <string name="username">Username</string>
 
@@ -86,13 +86,13 @@ Privacy Policy\n\nLuxuryRack Inc. built the [Cars from Paintings] app as a Comme
     <string name="image_toolbar_home">Image Toolbar</string>
     <string name="sort">Sort</string>
     <string name="videos_home">Videos</string>
-    <string name="paintings_categories_detail_image">Paintings Detail Image</string>
+    <string name="categories_detail_image">Paintings Detail Image</string>
     <string name="paintings_main_image">Paintings Image</string>
     <string name="paintings_name">Paintings Name</string>
     <string name="paintings_price">Paintings Price</string>
     <string name="paintings_description">Paintings Description</string>
-    <string name="paintings_car_name_categories_detail">Paintings Car Name</string>
-    <string name="paintings_detail_categories_description">Paintings Detail Description</string>
+    <string name="paintings_name_categories_detail">Paintings Car Name</string>
+    <string name="detail_categories_description">Paintings Detail Description</string>
     <string name="this_is_the_title_layout_video">This is the title</string>
     <string name="volume_on_off_layout_video">VolumeOnOff</string>
     <string name="thumbnail_layout_video">Thumbnail</string>
@@ -121,9 +121,9 @@ Privacy Policy\n\nLuxuryRack Inc. built the [Cars from Paintings] app as a Comme
     <string name="toolbar_expensive">Expensive Cars</string>
     <string name="toolbar_favourite_expensive">Favourites</string>
     <string name="toolbar_favourite_categories">Favourites</string>
-    <string name="paintings_main_image_expensive">Paintings Image</string>
+    <string name="main_image_expensive">Paintings Image</string>
     <string name="name_detail_expensive_detail">Paintings Car Name</string>
-    <string name="paintings_detail_expensive_description">Paintings Detail Description</string>
+    <string name="detail_expensive_description">Paintings Detail Description</string>
 
 
     <string name="discover_expensive"><font fgcolor='#0084ff'>•</font> Discover the Most Expensive Sports cars from Paintings</string>

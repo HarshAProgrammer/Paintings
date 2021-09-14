@@ -16,7 +16,7 @@
             android:layout_width="300dp"
             android:layout_height="200dp"
             android:src="@drawable/splashscreen"
-            android:contentDescription="@string/paintings_inc" />
+            android:contentDescription="@string/paintings" />
 
 
 
