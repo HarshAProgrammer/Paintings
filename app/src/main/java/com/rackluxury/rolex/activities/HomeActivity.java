@@ -251,9 +251,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.billingNavigation) {
             InAppPurchase();
 
-        } else if (id == R.id.factsNavigation) {
-            FactsAboutUs();
-
         } else if (id == R.id.signOutNavigation) {
             FirebaseAuth.getInstance().signOut();
             SignOut();
@@ -281,11 +278,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
-    private void FactsAboutUs() {
-        Intent openFactsFromMain = new Intent(HomeActivity.this, FactsActivity.class);
-        startActivity(openFactsFromMain);
-        Animatoo.animateSwipeRight(HomeActivity.this);
-    }
+
 
     private void InAppPurchase() {
         Intent openBillingFromMain = new Intent(HomeActivity.this, BillingActivity.class);

@@ -21,7 +21,6 @@
         <activity android:name=".activities.FirstSplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -39,8 +38,6 @@
         <activity
             android:name=".activities.CategoriesDetailActivity"
             android:theme="@style/AppTheme.SlidrActivityTheme" />
-        <activity android:name=".activities.FactsActivity" />
-        <activity android:name=".activities.FactsDetailActivity" />
         <activity android:name=".activities.VideoActivity" />
         <activity
             android:name=".activities.ProfileActivity"

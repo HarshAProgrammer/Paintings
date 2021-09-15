@@ -13,10 +13,7 @@
             android:id="@+id/billingNavigation"
             android:icon="@drawable/ic_buy_main"
             android:title="@string/buy_us_a_watch_nav_home" />
-        <item
-            android:id="@+id/factsNavigation"
-            android:icon="@drawable/ic_facts_main"
-            android:title="@string/facts_about_us_nav_home" />
+
 
 
         <item
