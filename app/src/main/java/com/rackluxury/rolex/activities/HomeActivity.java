@@ -245,10 +245,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.imagesNavigation) {
-            Images();
-
-        } else if (id == R.id.profileNavigation) {
+        if (id == R.id.profileNavigation) {
             ProfileDisplay();
 
         } else if (id == R.id.billingNavigation) {
@@ -305,12 +302,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
 
 
-    private void Images() {
-        Intent openImagesFromMain = new Intent(HomeActivity.this, ImagesActivity.class);
-        startActivity(openImagesFromMain);
-        Animatoo.animateSwipeRight(HomeActivity.this);
 
-    }
 
 
     private void ProfileDisplay() {
