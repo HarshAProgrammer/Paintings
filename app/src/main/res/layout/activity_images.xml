@@ -4,24 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/colorWhite"
+    android:background="@color/colorBackground"
     tools:context=".activities.ImagesActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayoutImages"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
         android:theme="@style/AppTheme"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbarImagesActivity"
             android:layout_width="match_parent"
             android:layout_height="?android:attr/actionBarSize"
-            android:background="@color/colorWhite"
+            android:background="@color/toolbarBackground"
             app:layout_scrollFlags="scroll|enterAlways"
-            app:titleTextColor="@color/colorBlack">
+            app:titleTextColor="@color/toolbarText">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -33,8 +34,8 @@
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginEnd="10dp"
-                    android:src="@drawable/ic_toolbar_back_black"
-                    android:contentDescription="@string/back" />
+                    android:src="@drawable/ic_toolbar_back"
+                    android:contentDescription="@string/ic_video_back_home" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -42,7 +43,7 @@
                     android:fontFamily="@font/open_sans_condensed_light"
                     android:gravity="center"
                     android:text="@string/images_toolbar_images"
-                    android:textColor="@color/colorBlack"
+                    android:textColor="@color/black"
                     android:textSize="30sp" />
 
 
@@ -53,25 +54,10 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.github.ybq.android.spinkit.SpinKitView
-        android:id="@+id/spin_kit_images"
-        style="@style/SpinKitView.Large.Circle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        app:SpinKit_Color="@color/colorAccent" />
-    <com.facebook.shimmer.ShimmerFrameLayout
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:id="@+id/sflImages"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvImages"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-    </com.facebook.shimmer.ShimmerFrameLayout>
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

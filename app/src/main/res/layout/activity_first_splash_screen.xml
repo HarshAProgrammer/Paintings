@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
+    android:background="@color/colorBackground"
     tools:context=".activities.FirstSplashScreenActivity">
 
 
@@ -16,7 +16,7 @@
             android:layout_width="300dp"
             android:layout_height="200dp"
             android:src="@drawable/splashscreen"
-            android:contentDescription="@string/paintings" />
+            android:contentDescription="@string/first_splash_image" />
 
 
 
@@ -31,7 +31,7 @@
         android:layout_below="@+id/image_splash_first"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:textSize="12sp" />
+        android:textSize="20sp" />
 
 
 </RelativeLayout>

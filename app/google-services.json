@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "6437631013",
-    "firebase_url": "https://paintings-71869.firebaseio.com",
-    "project_id": "paintings-71869",
-    "storage_bucket": "paintings-71869.appspot.com"
+    "project_number": "1060170093032",
+    "firebase_url": "https://rolex-sa.firebaseio.com",
+    "project_id": "rolex-sa",
+    "storage_bucket": "rolex-sa.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:6437631013:android:db8459a03f82774a71bbcc",
+        "mobilesdk_app_id": "1:1060170093032:android:027685c804add51d9cd45d",
         "android_client_info": {
-          "package_name": "com.rackluxury.paintings"
+          "package_name": "com.rackluxury.rolex"
         }
       },
       "oauth_client": [
         {
-          "client_id": "6437631013-u97gthvp4ria2k33o24djafv354h9ib2.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.rackluxury.paintings",
-            "certificate_hash": "b839793a6c481d7f0d00ccfe069334cc28692cfb"
-          }
-        },
-        {
-          "client_id": "6437631013-43k02dn9ntiq3ccr41gm5mdhevtorj89.apps.googleusercontent.com",
+          "client_id": "1060170093032-rjv5d7a8bl2rgjjth9ucmkdka8h56el4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAtAX_ICaVXJoxADpvYBEC9iltRmFUs8nY"
+          "current_key": "AIzaSyAiQSTNr707AAI8ahakyEYj1x7i5Jxu604"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "6437631013-43k02dn9ntiq3ccr41gm5mdhevtorj89.apps.googleusercontent.com",
+              "client_id": "1060170093032-rjv5d7a8bl2rgjjth9ucmkdka8h56el4.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
+    android:background="@color/colorBackground"
     android:orientation="vertical"
     tools:context=".activities.RegistrationActivity">
 
@@ -18,7 +19,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:layout_marginStart="275dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="275dp"
+            android:layout_marginBottom="0dp"
             android:background="@drawable/circle_border"
             app:layout_constraintBottom_toTopOf="@id/sign_up_title"
             app:layout_constraintEnd_toEndOf="parent"
@@ -43,11 +47,14 @@
             android:id="@+id/sign_up_title"
             style="@style/LabelStyle"
             android:layout_below="@id/imgUserRegistration"
+            android:layout_marginStart="150dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="0dp"
             android:fontFamily="@font/sf_pro_display_medium"
             android:text="@string/sign_up_title_registration"
-            android:textColor="@color/colorGreen"
-            android:textSize="25sp"
+            android:textColor="@color/green"
+            android:textSize="15sp"
             app:layout_constraintBottom_toTopOf="@id/sign_up_welcome_msg"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +64,10 @@
             android:id="@+id/sign_up_welcome_msg"
             style="@style/LabelStyle"
             android:layout_below="@id/sign_up_title"
+            android:layout_marginStart="100dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="0dp"
             android:text="@string/sign_up_welcome_txt_registration"
             android:textSize="12sp"
             app:layout_constraintBottom_toTopOf="@id/registration_username_layout"
@@ -69,7 +79,10 @@
             android:id="@+id/registration_username_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
             app:counterEnabled="true"
             app:counterMaxLength="15"
             app:errorEnabled="true"
@@ -81,19 +94,22 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etUserName"
                 style="@style/EditTextStyle"
-                android:layout_height="42dp"
+                android:layout_height="50dp"
+                android:drawableStart="@drawable/ic_name_registration"
                 android:fontFamily="@font/open_sans_condensed_light"
                 android:hint="@string/full_name_hint_registration"
                 android:inputType="textPersonName"
-                android:textColor="@color/colorBlack"
-                app:drawableStartCompat="@drawable/ic_name_registration" />
+                android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/registration_phone_no_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
             app:counterEnabled="true"
             app:errorEnabled="true"
             app:layout_constraintBottom_toTopOf="@id/registration_email_layout"
@@ -104,12 +120,12 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etUserPhoneNo"
                 style="@style/EditTextStyle"
-                android:layout_height="42dp"
+                android:layout_height="50dp"
+                android:drawableStart="@drawable/ic_phone_no_registration"
                 android:fontFamily="@font/open_sans_condensed_light"
                 android:hint="@string/phone_no_hint_registration"
                 android:inputType="phone"
-                android:textColor="@color/colorBlack"
-                app:drawableStartCompat="@drawable/ic_phone_no_registration" />
+                android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -117,7 +133,10 @@
             android:id="@+id/registration_email_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
             app:errorEnabled="true"
             app:layout_constraintBottom_toTopOf="@id/registration_password_layout"
             app:layout_constraintEnd_toEndOf="parent"
@@ -127,20 +146,23 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etUserEmail"
                 style="@style/EditTextStyle"
-                android:layout_height="42dp"
+                android:layout_height="50dp"
                 android:layout_below="@id/etUserPhoneNo"
+                android:drawableStart="@drawable/ic_email_registration"
                 android:fontFamily="@font/open_sans_condensed_light"
-                android:hint="@string/email_address"
+                android:hint="@string/email_address_hint_registration"
                 android:inputType="textEmailAddress"
-                android:textColor="@color/colorBlack"
-                app:drawableStartCompat="@drawable/ic_email_registration" />
+                android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/registration_password_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
             app:errorEnabled="true"
             app:layout_constraintBottom_toTopOf="@id/btnRegister"
             app:layout_constraintEnd_toEndOf="parent"
@@ -151,30 +173,31 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etUserPassword"
                 style="@style/EditTextStyle"
-                android:layout_height="42dp"
+                android:layout_height="50dp"
                 android:layout_below="@id/etUserEmail"
+                android:drawableStart="@drawable/ic_password_registration"
                 android:fontFamily="@font/open_sans_condensed_light"
-                android:hint="@string/password"
+                android:hint="@string/password_hint_registration"
                 android:inputType="textPassword"
-                android:textColor="@color/colorBlack"
-                app:drawableStartCompat="@drawable/ic_password_registration" />
+                android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.royrodriguez.transitionbutton.TransitionButton
+
+        <Button
             android:id="@+id/btnRegister"
+            style="@style/StrokeButtonStyle"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="50dp"
             android:layout_below="@id/registration_password_layout"
-            android:layout_marginTop="6dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
             android:text="@string/sign_up_btn_label_registration"
-            android:textColor="@color/colorGreen"
-            android:textSize="8sp"
-            app:defaultColor="@android:color/white"
             app:layout_constraintBottom_toTopOf="@id/registration_nav"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/registration_password_layout"
-            app:loaderColor="@color/colorGreen" />
+            app:layout_constraintTop_toBottomOf="@id/registration_password_layout" />
 
 
         <RelativeLayout
@@ -182,7 +205,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="6dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
             android:layout_marginBottom="16dp"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -195,8 +220,8 @@
                 style="@style/LabelStyle"
                 android:fontFamily="@font/sf_pro_display_medium"
                 android:text="@string/have_account_registration"
-                android:textColor="@color/colorGrey"
-                android:textSize="12sp" />
+                android:textColor="@color/account"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/tvUserLogin"
@@ -204,8 +229,8 @@
                 android:layout_toEndOf="@id/have_account_registration"
                 android:fontFamily="@font/sf_pro_display_medium"
                 android:text="@string/login_label_registration"
-                android:textColor="@color/colorGreen"
-                android:textSize="12sp" />
+                android:textColor="@color/green"
+                android:textSize="16sp" />
         </RelativeLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

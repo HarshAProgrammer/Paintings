@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
     android:orientation="horizontal"
+    android:background="@color/colorBackground"
     tools:context=".activities.CompanyInfo">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/ablCompany"
+        android:id="@+id/appBarLayoutCompany"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme"
@@ -21,8 +21,8 @@
             android:id="@+id/toolbarCompanyInfoActivity"
             android:layout_width="match_parent"
             android:layout_height="?android:attr/actionBarSize"
-            android:background="@color/colorWhite"
-            app:titleTextColor="@color/colorBlack">
+            android:background="@color/toolbarBackground"
+            app:titleTextColor="@color/toolbarText">
 
         </androidx.appcompat.widget.Toolbar>
 
@@ -38,7 +38,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/svCompanyInfo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ablCompany">
+        app:layout_constraintTop_toBottomOf="@id/appBarLayoutCompany">
 
         <com.smarteist.autoimageslider.SliderLayout
             android:id="@+id/imageSliderCompanyInfo"
@@ -59,7 +59,7 @@
         android:scrollbarSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/cvCompanyInfo"
-        app:layout_constraintTop_toBottomOf="@id/ablCompany">
+        app:layout_constraintTop_toBottomOf="@id/appBarLayoutCompany">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -74,7 +74,7 @@
                 android:id="@+id/folding_cell1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorWhite">
+                android:background="@color/colorCompanyCellBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -85,12 +85,12 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorCompany"
+                        android:background="@color/colorCompanyTitleBackground"
                         android:fontFamily="@font/open_sans_condensed_bold"
                         android:padding="32dp"
                         android:text="@string/tvCompanyHeading1"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="16sp"
+                        android:textColor="@color/colorCompanyTitleText"
+                        android:textSize="22sp"
 
                         >
 
@@ -100,12 +100,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:background="@color/colorWhite"
+                        android:background="@color/colorCompanyDescriptionBackground"
                         android:fontFamily="@font/raleway_medium"
                         android:padding="20dp"
                         android:text="@string/tvCompanyDescription1"
-                        android:textColor="@color/colorCompany"
-                        android:textSize="12sp">
+                        android:textColor="@color/colorCompanyDescriptionText"
+                        android:textSize="19sp">
 
                     </TextView>
 
@@ -123,7 +123,7 @@
                         android:padding="32dp"
                         android:text="@string/tvCompanyHeading1"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="16sp">
+                        android:textSize="22sp">
 
                     </TextView>
                 </LinearLayout>
@@ -134,7 +134,7 @@
                 android:id="@+id/folding_cell2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorWhite">
+                android:background="@color/colorCompanyCellBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -145,12 +145,12 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorCompany"
+                        android:background="@color/colorCompanyTitleBackground"
                         android:fontFamily="@font/open_sans_condensed_bold"
                         android:padding="32dp"
                         android:text="@string/tvCompanyHeading2"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="16sp">
+                        android:textColor="@color/colorCompanyTitleText"
+                        android:textSize="22sp">
 
                     </TextView>
 
@@ -158,12 +158,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:background="@color/colorWhite"
+                        android:background="@color/colorCompanyDescriptionBackground"
                         android:fontFamily="@font/raleway_medium"
                         android:padding="20dp"
                         android:text="@string/tvCompanyDescription2"
-                        android:textColor="@color/colorCompany"
-                        android:textSize="12sp">
+                        android:textColor="@color/colorCompanyDescriptionText"
+                        android:textSize="19sp">
 
                     </TextView>
 
@@ -181,7 +181,7 @@
                         android:padding="32dp"
                         android:text="@string/tvCompanyHeading2"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="16sp">
+                        android:textSize="22sp">
 
                     </TextView>
                 </LinearLayout>
@@ -192,7 +192,7 @@
                 android:id="@+id/folding_cell3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorWhite">
+                android:background="@color/colorCompanyCellBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -203,12 +203,12 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorCompany"
+                        android:background="@color/colorCompanyTitleBackground"
                         android:fontFamily="@font/open_sans_condensed_bold"
                         android:padding="32dp"
                         android:text="@string/tvCompanyHeading3"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="16sp">
+                        android:textColor="@color/colorCompanyTitleText"
+                        android:textSize="22sp">
 
                     </TextView>
 
@@ -216,12 +216,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:background="@color/colorWhite"
+                        android:background="@color/colorCompanyDescriptionBackground"
                         android:fontFamily="@font/raleway_medium"
                         android:padding="20dp"
                         android:text="@string/tvCompanyDescription3"
-                        android:textColor="@color/colorCompany"
-                        android:textSize="12sp">
+                        android:textColor="@color/colorCompanyDescriptionText"
+                        android:textSize="19sp">
 
                     </TextView>
 
@@ -239,7 +239,7 @@
                         android:padding="32dp"
                         android:text="@string/tvCompanyHeading3"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="16sp">
+                        android:textSize="22sp">
 
                     </TextView>
                 </LinearLayout>
@@ -250,7 +250,7 @@
                 android:id="@+id/folding_cell4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorWhite">
+                android:background="@color/colorCompanyCellBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -261,12 +261,12 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorCompany"
+                        android:background="@color/colorCompanyTitleBackground"
                         android:fontFamily="@font/open_sans_condensed_bold"
                         android:padding="32dp"
                         android:text="@string/tvCompanyHeading4"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="16sp">
+                        android:textColor="@color/colorCompanyTitleText"
+                        android:textSize="22sp">
 
                     </TextView>
 
@@ -274,12 +274,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:background="@color/colorWhite"
+                        android:background="@color/colorCompanyDescriptionBackground"
                         android:fontFamily="@font/raleway_medium"
                         android:padding="20dp"
                         android:text="@string/tvCompanyDescription4"
-                        android:textColor="@color/colorCompany"
-                        android:textSize="12sp">
+                        android:textColor="@color/colorCompanyDescriptionText"
+                        android:textSize="19sp">
 
                     </TextView>
 
@@ -297,7 +297,7 @@
                         android:padding="32dp"
                         android:text="@string/tvCompanyHeading4"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="16sp">
+                        android:textSize="22sp">
 
                     </TextView>
                 </LinearLayout>
@@ -308,7 +308,7 @@
                 android:id="@+id/folding_cell5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorWhite">
+                android:background="@color/colorCompanyCellBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -319,12 +319,12 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorCompany"
+                        android:background="@color/colorCompanyTitleBackground"
                         android:fontFamily="@font/open_sans_condensed_bold"
                         android:padding="32dp"
                         android:text="@string/tvCompanyHeading5"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="16sp">
+                        android:textColor="@color/colorCompanyTitleText"
+                        android:textSize="22sp">
 
                     </TextView>
 
@@ -332,12 +332,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:background="@color/colorWhite"
+                        android:background="@color/colorCompanyDescriptionBackground"
                         android:fontFamily="@font/raleway_medium"
                         android:padding="20dp"
                         android:text="@string/tvCompanyDescription5"
-                        android:textColor="@color/colorCompany"
-                        android:textSize="12sp">
+                        android:textColor="@color/colorCompanyDescriptionText"
+                        android:textSize="19sp">
 
                     </TextView>
 
@@ -355,17 +355,18 @@
                         android:padding="32dp"
                         android:text="@string/tvCompanyHeading5"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="16sp">
+                        android:textSize="22sp">
 
                     </TextView>
                 </LinearLayout>
 
             </com.ramotion.foldingcell.FoldingCell>
+
             <com.ramotion.foldingcell.FoldingCell
                 android:id="@+id/folding_cell6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorWhite">
+                android:background="@color/colorCompanyCellBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -376,12 +377,12 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/colorCompany"
+                        android:background="@color/colorCompanyTitleBackground"
                         android:fontFamily="@font/open_sans_condensed_bold"
                         android:padding="32dp"
                         android:text="@string/tvCompanyHeading6"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="16sp">
+                        android:textColor="@color/colorCompanyTitleText"
+                        android:textSize="22sp">
 
                     </TextView>
 
@@ -389,12 +390,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:background="@color/colorWhite"
+                        android:background="@color/colorCompanyDescriptionBackground"
                         android:fontFamily="@font/raleway_medium"
                         android:padding="20dp"
                         android:text="@string/tvCompanyDescription6"
-                        android:textColor="@color/colorCompany"
-                        android:textSize="12sp">
+                        android:textColor="@color/colorCompanyDescriptionText"
+                        android:textSize="19sp">
 
                     </TextView>
 
@@ -412,7 +413,7 @@
                         android:padding="32dp"
                         android:text="@string/tvCompanyHeading6"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="16sp">
+                        android:textSize="22sp">
 
                     </TextView>
                 </LinearLayout>

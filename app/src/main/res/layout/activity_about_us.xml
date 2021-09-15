@@ -4,25 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
-    android:orientation="vertical"
-    tools:context=".activities.AboutUsActivity">
-
+    tools:context=".activities.AboutUsActivity"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/ablAboutUs"
+        android:id="@+id/appBarLayoutAboutUs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/AppTheme">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarAboutUsActivity"
             android:layout_width="match_parent"
+            android:background="@color/toolbarBackground"
+            app:titleTextColor="@color/toolbarText"
             android:layout_height="?android:attr/actionBarSize"
-            android:background="@color/colorWhite"
-            app:titleTextColor="@color/colorBlack">
+            android:id="@+id/toolbarAboutUsActivity">
 
         </androidx.appcompat.widget.Toolbar>
 
@@ -32,31 +31,30 @@
 
     <ImageView
         android:id="@+id/ivAboutUs"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="12dp"
-        android:contentDescription="@string/paintings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/splashscreen"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
         app:layout_constraintBottom_toTopOf="@id/tvVersionAbout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ablAboutUs" />
+        app:layout_constraintTop_toBottomOf="@id/appBarLayoutAboutUs"
+        android:contentDescription="@string/rolex_inc_about_us" />
 
     <TextView
         android:id="@+id/tvVersionAbout"
-        style="@style/TextAppearance.AppCompat.Medium"
-        android:textSize="14sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/version_about_us"
+        android:layout_marginBottom="50dp"
+        style="@style/TextAppearance.AppCompat.Medium"
         android:layout_gravity="center"
         android:layout_marginTop="0dp"
-        android:layout_marginBottom="50dp"
-        android:text="@string/version_about_us"
         app:layout_constraintBottom_toTopOf="@id/cvRateAbout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivAboutUs" />
+        app:layout_constraintTop_toBottomOf="@id/ivAboutUs"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvRateAbout"
@@ -73,27 +71,26 @@
             android:id="@+id/ivRateAbout"
             android:layout_width="25dp"
             android:layout_height="25dp"
+            android:src="@drawable/ic_star_24dp"
             android:layout_gravity="start|center"
             android:layout_marginStart="12dp"
-            android:contentDescription="@string/image_rate_about_us"
-            android:src="@drawable/ic_star_24dp" />
+            android:contentDescription="@string/image_rate_about_us" />
 
         <TextView
-            style="@style/TextAppearance.AppCompat.Medium"
-            android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/rate_app_about_us"
             android:layout_gravity="start|center"
             android:layout_marginStart="50dp"
-            android:text="@string/rate_app_about_us" />
+            style="@style/TextAppearance.AppCompat.Medium"/>
 
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
+            android:src="@drawable/ic_arrow_right_24dp"
             android:layout_gravity="end|center"
             android:layout_marginEnd="12dp"
-            android:contentDescription="@string/arrow_right_about_us"
-            android:src="@drawable/ic_arrow_right_24dp" />
+            android:contentDescription="@string/arrow_right_about_us"/>
 
 
     </androidx.cardview.widget.CardView>
@@ -112,27 +109,26 @@
             android:id="@+id/ivPrivacyAbout"
             android:layout_width="25dp"
             android:layout_height="25dp"
+            android:src="@drawable/ic_privacy"
             android:layout_gravity="start|center"
             android:layout_marginStart="12dp"
-            android:contentDescription="@string/image_privacy_about_us"
-            android:src="@drawable/ic_privacy" />
+            android:contentDescription="@string/image_privacy_about_us" />
 
         <TextView
-            style="@style/TextAppearance.AppCompat.Medium"
-            android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/privacy_policy_about_us"
             android:layout_gravity="start|center"
             android:layout_marginStart="50dp"
-            android:text="@string/privacy_policy_about_us" />
+            style="@style/TextAppearance.AppCompat.Medium"/>
 
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_gravity="end|center"
-            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_arrow_right_24dp"
             android:contentDescription="@string/arrow_right_about_us"
-            android:src="@drawable/ic_arrow_right_24dp" />
+            android:layout_gravity="end|center"
+            android:layout_marginEnd="12dp"/>
 
     </androidx.cardview.widget.CardView>
 
@@ -150,27 +146,26 @@
             android:id="@+id/ivTermsAbout"
             android:layout_width="25dp"
             android:layout_height="25dp"
+            android:src="@drawable/ic_terms"
             android:layout_gravity="start|center"
             android:layout_marginStart="12dp"
-            android:contentDescription="@string/image_terms_about_us"
-            android:src="@drawable/ic_terms" />
+            android:contentDescription="@string/image_terms_about_us" />
 
         <TextView
-            style="@style/TextAppearance.AppCompat.Medium"
-            android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/terms_and_conditions_about_us"
             android:layout_gravity="start|center"
             android:layout_marginStart="50dp"
-            android:text="@string/terms_and_conditions_about_us" />
+            style="@style/TextAppearance.AppCompat.Medium"/>
 
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_gravity="end|center"
-            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_arrow_right_24dp"
             android:contentDescription="@string/arrow_right_about_us"
-            android:src="@drawable/ic_arrow_right_24dp" />
+            android:layout_gravity="end|center"
+            android:layout_marginEnd="12dp"/>
 
     </androidx.cardview.widget.CardView>
 
@@ -188,27 +183,26 @@
             android:id="@+id/ivFeedbackAbout"
             android:layout_width="25dp"
             android:layout_height="25dp"
+            android:src="@drawable/ic_feedback_24dp"
             android:layout_gravity="start|center"
             android:layout_marginStart="12dp"
-            android:contentDescription="@string/image_feedback_about_us"
-            android:src="@drawable/ic_feedback_24dp" />
+            android:contentDescription="@string/image_feedback_about_us" />
 
         <TextView
-            style="@style/TextAppearance.AppCompat.Medium"
-            android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/feedback_about_us"
             android:layout_gravity="start|center"
             android:layout_marginStart="50dp"
-            android:text="@string/feedback_about_us" />
+            style="@style/TextAppearance.AppCompat.Medium"/>
 
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_gravity="end|center"
-            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_arrow_right_24dp"
             android:contentDescription="@string/arrow_right_about_us"
-            android:src="@drawable/ic_arrow_right_24dp" />
+            android:layout_gravity="end|center"
+            android:layout_marginEnd="12dp"/>
 
     </androidx.cardview.widget.CardView>
 

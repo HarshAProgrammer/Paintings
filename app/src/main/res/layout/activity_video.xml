@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
+    android:background="@color/colorBackground"
     tools:context=".activities.VideoActivity">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/ablVideo"
+        android:id="@+id/appBarLayoutVideo"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
         android:theme="@style/AppTheme"
@@ -20,10 +20,9 @@
             android:id="@+id/toolbarVideoActivity"
             android:layout_width="match_parent"
             android:layout_height="?android:attr/actionBarSize"
-            android:background="@color/colorWhite"
+            android:background="@color/toolbarBackground"
             app:layout_scrollFlags="scroll|enterAlways"
-            app:titleTextColor="@color/colorBlack">
-
+            app:titleTextColor="@color/toolbarText">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -35,8 +34,8 @@
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginEnd="10dp"
-                    android:contentDescription="@string/back"
-                    android:src="@drawable/ic_toolbar_back_black" />
+                    android:src="@drawable/ic_toolbar_back"
+                    android:contentDescription="@string/ic_video_back_home" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -44,7 +43,7 @@
                     android:fontFamily="@font/open_sans_condensed_light"
                     android:gravity="center"
                     android:text="@string/videos_toolbar_home"
-                    android:textColor="@color/colorBlack"
+                    android:textColor="@color/black"
                     android:textSize="30sp" />
 
 
@@ -55,25 +54,18 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.facebook.shimmer.ShimmerFrameLayout
-        android:id="@+id/sflVideo"
+    <com.rackluxury.rolex.activities.VideoPlayerRecyclerView
+        android:id="@+id/rvVideoActivity"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.rackluxury.paintings.activities.VideoPlayerRecyclerView
-            android:id="@+id/rvVideoActivity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ablVideo">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayoutVideo">
 
 
-        </com.rackluxury.paintings.activities.VideoPlayerRecyclerView>
-    </com.facebook.shimmer.ShimmerFrameLayout>
-
+    </com.rackluxury.rolex.activities.VideoPlayerRecyclerView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

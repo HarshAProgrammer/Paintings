@@ -2,9 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
+    android:background="@color/colorBackground"
     android:orientation="horizontal"
     tools:context=".activities.RegistrationActivity">
 
@@ -18,6 +19,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:layout_marginStart="275dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="275dp"
             android:layout_marginBottom="130dp"
             android:background="@drawable/circle_border"
             app:layout_constraintBottom_toTopOf="@+id/btnRegister"
@@ -42,13 +46,14 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/registration_username_layout"
-            android:layout_width="260dp"
-            android:layout_height="45dp"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
             android:layout_above="@+id/registration_phone_no_layout"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="150dp"
-            android:layout_marginEnd="80dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="0dp"
             app:counterEnabled="true"
             app:counterMaxLength="15"
             app:errorEnabled="true"
@@ -60,24 +65,26 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etUserName"
                 style="@style/EditTextStyle"
-                app:drawableStartCompat="@drawable/ic_name_registration"
+                android:drawableStart="@drawable/ic_name_registration"
                 android:drawablePadding="12dp"
                 android:fontFamily="@font/open_sans_condensed_light"
                 android:hint="@string/full_name_hint_registration"
                 android:inputType="textPersonName"
                 android:padding="8dp"
-                android:textColor="@color/colorBlack" />
+                android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/registration_phone_no_layout"
-            android:layout_width="260dp"
-            android:layout_height="45dp"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="0dp"
             app:errorEnabled="true"
             app:layout_constraintBottom_toTopOf="@id/btnRegister"
             app:layout_constraintEnd_toStartOf="@+id/registration_password_layout"
@@ -88,7 +95,7 @@
                 android:id="@+id/etUserPhoneNo"
                 style="@style/EditTextStyle"
                 android:background="@android:color/transparent"
-                app:drawableStartCompat="@drawable/ic_phone_no_registration"
+                android:drawableStart="@drawable/ic_phone_no_registration"
                 android:drawablePadding="12dp"
                 android:ems="10"
                 android:fontFamily="@font/open_sans_condensed_light"
@@ -96,18 +103,19 @@
                 android:inputType="phone"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:textColor="@color/colorBlack" />
+                android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/registration_email_layout"
-            android:layout_width="260dp"
-            android:layout_height="45dp"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="80dp"
+            android:layout_marginStart="100dp"
             android:layout_marginTop="150dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="0dp"
             app:errorEnabled="true"
             app:layout_constraintBottom_toTopOf="@id/registration_password_layout"
             app:layout_constraintEnd_toEndOf="parent"
@@ -120,25 +128,27 @@
                 style="@style/EditTextStyle"
                 android:layout_below="@id/etUserPhoneNo"
                 android:background="@android:color/transparent"
-                app:drawableStartCompat="@drawable/ic_email_registration"
+                android:drawableStart="@drawable/ic_email_registration"
                 android:drawablePadding="12dp"
                 android:ems="10"
                 android:fontFamily="@font/open_sans_condensed_light"
-                android:hint="@string/email_address"
+                android:hint="@string/email_address_hint_registration"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:textColor="@color/colorBlack" />
+                android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/registration_password_layout"
-            android:layout_width="260dp"
-            android:layout_height="45dp"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
             android:layout_below="@id/registration_email_layout"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="80dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="0dp"
             app:errorEnabled="true"
             app:layout_constraintBottom_toTopOf="@id/btnRegister"
             app:layout_constraintEnd_toEndOf="parent"
@@ -152,32 +162,28 @@
                 style="@style/EditTextStyle"
                 android:layout_below="@id/registration_email_layout"
                 android:background="@android:color/transparent"
-                app:drawableStartCompat="@drawable/ic_password_registration"
+                android:drawableStart="@drawable/ic_password_registration"
                 android:drawablePadding="12dp"
                 android:ems="10"
                 android:fontFamily="@font/open_sans_condensed_light"
-                android:hint="@string/password"
+                android:hint="@string/password_hint_registration"
                 android:inputType="textPassword"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:textColor="@color/colorBlack" />
+                android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
-        <com.royrodriguez.transitionbutton.TransitionButton
-            android:textColor="@color/colorGreen"
-            app:loaderColor="@color/colorGreen"
-            app:defaultColor="@android:color/white"
+
+        <Button
             android:id="@+id/btnRegister"
-            android:layout_height="25dp"
+            style="@style/StrokeButtonStyle"
             android:layout_width="match_parent"
             android:layout_above="@id/registration_nav"
             android:layout_below="@id/registration_password_layout"
-            android:textSize="8sp"
             android:text="@string/sign_up_btn_label_registration"
             app:layout_constraintBottom_toTopOf="@id/registration_nav"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imgUserRegistration" />
-
 
 
         <RelativeLayout
@@ -196,8 +202,8 @@
                 style="@style/LabelStyle"
                 android:fontFamily="@font/sf_pro_display_medium"
                 android:text="@string/have_account_registration"
-                android:textColor="@color/colorGrey"
-                android:textSize="12sp" />
+                android:textColor="@color/account"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/tvUserLogin"
@@ -205,8 +211,8 @@
                 android:layout_toEndOf="@id/have_account_registration"
                 android:fontFamily="@font/sf_pro_display_medium"
                 android:text="@string/login_label_registration"
-                android:textColor="@color/colorGreen"
-                android:textSize="12sp" />
+                android:textColor="@color/green"
+                android:textSize="16sp" />
         </RelativeLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -5,37 +5,17 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/expensiveNavigation"
-            android:icon="@drawable/ic_expensive_main"
-            android:title="@string/most_expensive_nav_home" />
-        <item
             android:id="@+id/imagesNavigation"
             android:icon="@drawable/ic_images_main"
             android:title="@string/images_nav_home" />
         <item
-            android:id="@+id/videoNavigation"
-            android:icon="@drawable/ic_video_library_main"
-            android:title="@string/videos_nav_home" />
-        <item
-            android:id="@+id/youtubeVideoNavigation"
-            android:icon="@drawable/ic_youtube_video_library_main"
-            android:title="@string/youtube_videos_nav_home" />
-        <item
-            android:id="@+id/blogNavigation"
-            android:icon="@drawable/ic_blog_main"
-            android:title="@string/blog_nav_home" />
-        <item
-            android:id="@+id/redditNavigation"
-            android:icon="@drawable/ic_reddit_main"
-            android:title="@string/reddit_nav_home" />
-        <item
             android:id="@+id/profileNavigation"
-            android:icon="@drawable/ic_person"
+            android:icon="@drawable/ic_manage_account_main"
             android:title="@string/profile_nav_home" />
         <item
             android:id="@+id/billingNavigation"
             android:icon="@drawable/ic_buy_main"
-            android:title="@string/buy_us_a_car_nav_home" />
+            android:title="@string/buy_us_a_watch_nav_home" />
         <item
             android:id="@+id/factsNavigation"
             android:icon="@drawable/ic_facts_main"
@@ -54,7 +34,7 @@
                     <item
                         android:id="@+id/shareNavigation"
                         android:icon="@drawable/ic_general_share_main"
-                        android:title="@string/share" />
+                        android:title="@string/share_nav_home" />
                     <item
                         android:id="@+id/facebookLikeNavigation"
                         android:icon="@drawable/ic_facebook_like_main"

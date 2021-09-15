@@ -1,125 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.rackluxury.paintings">
-    <!--
-         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
-         Google Maps Android API v2, but you must specify either coarse or fine
-         location permissions for the "MyLocation" functionality.
-    -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
-    <queries>
-        <intent>
-            <action android:name="android.support.customtabs.action.CustomTabsService" />
-        </intent>
-    </queries>
+    package="com.rackluxury.rolex">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="com.android.vending.BILLING" />
-    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="22" />
-
-    <uses-permission-sdk-23
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="28" />
-
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
 
     <application
-        android:name="com.rackluxury.paintings.reddit.Infinity"
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true"
-        tools:replace="android:label">
-        <activity
-            android:name="com.rackluxury.paintings.activities.VideoCheckerActivity"
-            />
-
-        <meta-data
-            android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@drawable/toolbar_home_icon" />
-        <meta-data
-            android:name="com.google.firebase.messaging.default_notification_color"
-            android:resource="@color/fcmNotificationColor" />
-
-        <service
-            android:name="com.rackluxury.paintings.activities.ExpensiveNotificationService"
-            android:permission="com.google.android.c2dm.permission.SEND">
-            <intent-filter>
-                <action android:name="com.google.android.c2dm.intent.RECIEVE" />
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
-
-        <activity android:name="com.rackluxury.paintings.activities.FavouriteCategoriesActivity" />
-        <activity android:name="com.rackluxury.paintings.activities.IntroActivity">
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.ImagesDetailActivity" />
+        <activity android:name=".activities.ImagesActivity" />
+        <activity android:name=".activities.FirstSplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.rackluxury.paintings.activities.FavouriteExpensiveActivity" />
-        <activity android:name="com.rackluxury.paintings.activities.FirstSplashScreenActivity" />
-        <activity android:name="com.rackluxury.paintings.activities.SecondSplashScreenActivity" />
+        <activity android:name=".activities.SecondSplashScreenActivity" />
         <activity
-            android:name="com.rackluxury.paintings.activities.LoginOrRegisterActivity"
+            android:name=".activities.LoginOrRegisterActivity"
             android:launchMode="singleTop" />
-        <activity android:name="com.rackluxury.paintings.activities.RegistrationActivity" />
-        <activity android:name="com.rackluxury.paintings.activities.LoginActivity" />
-        <activity android:name="com.rackluxury.paintings.activities.ForgotPassword" />
+        <activity android:name=".activities.RegistrationActivity" />
+        <activity android:name=".activities.ForgotPassword" />
+        <activity android:name=".activities.LoginActivity" />
         <activity
-            android:name="com.rackluxury.paintings.activities.HomeActivity"
+            android:name=".activities.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.rackluxury.paintings.activities.VideoActivity" />
         <activity
-            android:name="com.rackluxury.paintings.activities.CategoriesDetailActivity"
+            android:name=".activities.CategoriesDetailActivity"
             android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity android:name=".activities.FactsActivity" />
+        <activity android:name=".activities.FactsDetailActivity" />
+        <activity android:name=".activities.VideoActivity" />
         <activity
-            android:name="com.rackluxury.paintings.activities.ExpensiveCheckerActivity"
-            android:launchMode="singleTop" />
-        <activity
-            android:name="com.rackluxury.paintings.activities.BlogCheckerActivity"
-            android:launchMode="singleTop" />
-        <activity
-            android:name="com.rackluxury.paintings.activities.ExpensiveActivity"
-            android:parentActivityName="com.rackluxury.paintings.activities.HomeActivity" />
-        <activity
-            android:name="com.rackluxury.paintings.activities.ExpensiveDetailActivity"
-            android:theme="@style/AppTheme.SlidrActivityTheme" />
-        <activity android:name="com.rackluxury.paintings.activities.ImagesActivity" />
-        <activity android:name="com.rackluxury.paintings.activities.ImagesDetailActivity" />
-        <activity
-            android:name="com.rackluxury.paintings.youtube.YouTubeActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppThemeYoutube" />
-        <activity
-            android:name="com.rackluxury.paintings.activities.ProfileActivity"
+            android:name=".activities.ProfileActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="com.rackluxury.paintings.activities.UpdatePasswordActivity" />
-        <activity android:name="com.rackluxury.paintings.activities.UpdateProfileActivity" />
-        <activity android:name="com.rackluxury.paintings.activities.BillingActivity" />
-        <activity android:name="com.rackluxury.paintings.activities.FactsActivity" />
-        <activity android:name="com.rackluxury.paintings.activities.FactsDetailActivity" />
-        <activity android:name="com.rackluxury.paintings.activities.CompanyInfo" />
-        <activity android:name="com.rackluxury.paintings.activities.AboutUsActivity" />
-        <activity android:name="com.rackluxury.paintings.blog.BlogActivity" />
-        <activity android:name="com.rackluxury.paintings.blog.BlogDetailActivity" />
+        <activity android:name=".activities.UpdatePasswordActivity" />
+        <activity android:name=".activities.UpdateProfileActivity" />
+        <activity android:name=".activities.BillingActivity" />
+        <activity android:name=".activities.AboutUsActivity" />
+        <activity android:name=".activities.CompanyInfo" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -142,14 +74,14 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name="com.rackluxury.paintings.activities.AppWidgetProvider">
+        <receiver android:name=".activities.RolexAppWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
 
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/appwidget_info" />
+                android:resource="@xml/rolex_appwidget_info" />
         </receiver>
 
         <provider
@@ -161,421 +93,6 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_path" />
         </provider>
-
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditTrendingActivity"
-            android:label="@string/trending_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditPostGalleryActivity"
-            android:label="@string/post_gallery_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditRPANActivity"
-            android:configChanges="orientation|screenSize|layoutDirection"
-            android:label="@string/rpan_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.TranslucentStatusBar"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditLockScreenActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.AnonymousSubscriptionsActivity"
-            android:label="@string/subscriptions"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditWebViewActivity"
-            android:label=""
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.SuicidePreventionActivity"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.MultiredditSelectionActivity"
-            android:label="@string/multireddit_selection_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditSearchUsersResultActivity"
-            android:label="@string/search_users_result_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.PostFilterUsageListingActivity"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditSettingsActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditPostFilterPreferenceActivity"
-            android:label="@string/post_filter_preference_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditSettingsActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.CustomizePostFilterActivity"
-            android:label="@string/customize_post_filter_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditSettingsActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.FetchRandomSubredditOrPostActivity"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.GiveAwardActivity"
-            android:label="@string/give_award_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.SelectUserFlairActivity"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.FullMarkdownActivity"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditSubmitCrosspostActivity"
-            android:label="@string/submit_crosspost_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar"
-            android:windowSoftInputMode="adjustResize" />
-
-        <service
-            android:name="com.rackluxury.paintings.reddit.services.RedditDownloadMediaService"
-            android:enabled="true"
-            android:exported="false" />
-
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditViewRedditGalleryActivity"
-            android:configChanges="orientation|screenSize|layoutDirection"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Draggable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.SendPrivateMessageActivity"
-            android:label="@string/send_private_message_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar"
-            android:windowSoftInputMode="adjustResize" />
-
-        <service
-            android:name="com.rackluxury.paintings.reddit.services.RedditDownloadRedditVideoService"
-            android:enabled="true"
-            android:exported="false" />
-
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditViewPrivateMessagesActivity"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditViewImgurMediaActivity"
-            android:configChanges="orientation|screenSize|layoutDirection"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Draggable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.ReportActivity"
-            android:label="@string/report_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.SelectedSubredditsAndUsersActivity"
-            android:label="@string/selected_subeddits_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditEditMultiRedditActivity"
-            android:label="@string/edit_multi_reddit_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditCustomThemePreviewActivity"
-            android:label="@string/theme_preview_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.SlidableWithTranslucentWindow" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.CustomThemeListingActivity"
-            android:label="@string/custom_theme_listing_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditCustomizeThemeActivity"
-            android:label="@string/customize_theme_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditSubredditMultiselectionActivity"
-            android:label="@string/subreddit_multiselection_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.CreateMultiRedditActivity"
-            android:label="@string/create_multi_reddit_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditViewMultiRedditDetailActivity"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.AccountSavedThingActivity"
-            android:label="@string/account_saved_thing_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity android:name="com.rackluxury.paintings.reddit.activities.ShareDataResolverActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.SEND" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data android:mimeType="image/*" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.SEND" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data android:mimeType="video/*" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.SEND" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data android:mimeType="text/plain" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditSettingsActivity"
-            android:label="@string/settings_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/PreferenceActivityTheme" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditInboxActivity"
-            android:label="@string/view_message_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditAccountPostsActivity"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditEditCommentActivity"
-            android:label="@string/edit_comment_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditEditPostActivity"
-            android:label="@string/edit_post_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditFilteredPostsActivity"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditSearchSubredditsResultActivity"
-            android:label="@string/search_subreddits_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity android:name="com.rackluxury.paintings.reddit.activities.RedditLinkResolverActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:host="www.reddit.com"
-                    android:scheme="https" />
-                <data
-                    android:host="reddit.com"
-                    android:scheme="https" />
-                <data
-                    android:host="amp.reddit.com"
-                    android:scheme="https" />
-                <data
-                    android:host="m.reddit.com"
-                    android:scheme="https" />
-                <data
-                    android:host="old.reddit.com"
-                    android:scheme="https" />
-                <data
-                    android:host="new.reddit.com"
-                    android:scheme="https" />
-                <data
-                    android:host="np.reddit.com"
-                    android:scheme="https" />
-                <data
-                    android:host="reddit.app.link"
-                    android:scheme="https" />
-                <data
-                    android:host="redd.it"
-                    android:scheme="https" />
-                <data
-                    android:host="s.reddit.com"
-                    android:scheme="https" />
-                <data
-                    android:host="click.redditmail.com"
-                    android:scheme="https" />
-                <data
-                    android:host="www.reddit.com"
-                    android:scheme="http" />
-                <data
-                    android:host="reddit.com"
-                    android:scheme="http" />
-                <data
-                    android:host="amp.reddit.com"
-                    android:scheme="http" />
-                <data
-                    android:host="m.reddit.com"
-                    android:scheme="http" />
-                <data
-                    android:host="old.reddit.com"
-                    android:scheme="http" />
-                <data
-                    android:host="new.reddit.com"
-                    android:scheme="http" />
-                <data
-                    android:host="np.reddit.com"
-                    android:scheme="http" />
-                <data
-                    android:host="reddit.app.link"
-                    android:scheme="http" />
-                <data
-                    android:host="redd.it"
-                    android:scheme="http" />
-                <data
-                    android:host="s.reddit.com"
-                    android:scheme="http" />
-                <data
-                    android:host="click.redditmail.com"
-                    android:scheme="http" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditSearchActivity"
-            android:label="@string/search_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditRulesActivity"
-            android:label="@string/rules_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditPostVideoActivity"
-            android:label="@string/post_video_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditPostImageActivity"
-            android:label="@string/post_image_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditPostLinkActivity"
-            android:label="@string/post_link_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditSubscribedThingListingActivity"
-            android:label="@string/subscriptions"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditSubredditSelectionActivity"
-            android:label="@string/subreddit_selection_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditPostTextActivity"
-            android:label="@string/post_text_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditCommentActivity"
-            android:label="@string/comment_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.NoActionBar"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.SearchResultActivity"
-            android:label="@string/search_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:label="@string/application_name"
-            android:theme="@style/AppThemeReddit.Launcher"
-            android:windowSoftInputMode="adjustPan"></activity>
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditLoginActivity"
-            android:label="@string/login_activity_label"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.ViewImageOrGifActivity"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.SlidableWithActionBar" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditViewVideoActivity"
-            android:configChanges="orientation|screenSize|layoutDirection"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Draggable" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditViewPostDetailActivity"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.Slidable"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditViewSubredditDetailActivity"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.SlidableWithTranslucentWindow" />
-        <activity
-            android:name="com.rackluxury.paintings.reddit.activities.RedditViewUserDetailActivity"
-            android:parentActivityName="com.rackluxury.paintings.reddit.activities.RedditMainActivity"
-            android:theme="@style/AppThemeReddit.SlidableWithTranslucentWindow" />
-
-        <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="com.rackluxury.paintings.reddit.provider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths" />
-        </provider>
-        <provider
-            android:name="androidx.startup.InitializationProvider"
-            android:authorities="${applicationId}.androidx-startup"
-            android:exported="false"
-            tools:node="merge">
-            <meta-data
-                android:name="com.crazylegend.crashyreporter.initializer.CrashyInitializer"
-                android:value="androidx.startup" />
-        </provider>
-
-        <service
-            android:name="com.rackluxury.paintings.reddit.services.SubmitPostService"
-            android:enabled="true"
-            android:exported="false" />
-        <service
-            android:name="com.rackluxury.paintings.reddit.services.MaterialYouService"
-            android:exported="false" />
     </application>
 
 </manifest>

@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/factsActivity"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorWhite"
+    android:background="@color/colorBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.FactsActivity">
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/ablFacts"
+        android:id="@+id/appBarLayoutFacts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:theme="@style/AppTheme">
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
-            android:background="@color/colorWhite"
-            app:titleTextColor="@color/colorBlack"
+            android:background="@color/toolbarBackground"
+            app:titleTextColor="@color/toolbarText"
             android:layout_height="?android:attr/actionBarSize"
             android:id="@+id/toolbarFactsActivity">
 
@@ -37,7 +37,7 @@
         android:overScrollMode="never"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ablFacts"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayoutFacts"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

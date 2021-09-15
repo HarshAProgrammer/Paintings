@@ -5,10 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorWhite"
+    android:id="@+id/activity_profile"
+    android:background="@color/colorBackground"
     tools:context=".activities.ProfileActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayoutProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
@@ -20,7 +22,7 @@
             app:layout_scrollFlags="scroll|snap|enterAlways"
             app:title="@string/app_name">
 
-            <com.github.chrisbanes.photoview.PhotoView
+            <ImageView
                 android:id="@+id/ivProfilePic"
                 android:layout_width="match_parent"
                 android:layout_height="600dp"
@@ -49,7 +51,7 @@
 
         <TextView
             android:id="@+id/tvProfileName"
-            app:drawableStartCompat="@drawable/ic_name_profile"
+            android:drawableStart="@drawable/ic_name_profile"
             style="@style/TextViewStyle"
             android:layout_marginStart="0dp"
             android:layout_marginTop="4dp"
@@ -61,7 +63,7 @@
 
         <TextView
             android:id="@+id/tvProfilePhoneNo"
-            app:drawableStartCompat="@drawable/ic_phone_no_profile"
+            android:drawableStart="@drawable/ic_phone_no_profile"
             style="@style/TextViewStyle"
             android:layout_marginStart="0dp"
             android:layout_marginTop="4dp"
@@ -71,7 +73,7 @@
 
         <TextView
             android:id="@+id/tvProfileEmail"
-            app:drawableStartCompat="@drawable/ic_email"
+            android:drawableStart="@drawable/ic_email_profile"
             style="@style/TextViewStyle"
             android:layout_marginStart="0dp"
             android:layout_marginTop="4dp"
