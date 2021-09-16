@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.rackluxury.rolex">
+    package="com.rackluxury.paintings">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -28,35 +28,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.FirstSplashScreenActivity">
+        <activity android:name="com.rackluxury.paintings.activities.FirstSplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.SecondSplashScreenActivity" />
+        <activity android:name="com.rackluxury.paintings.activities.SecondSplashScreenActivity" />
         <activity
-            android:name=".activities.LoginOrRegisterActivity"
+            android:name="com.rackluxury.paintings.activities.LoginOrRegisterActivity"
             android:launchMode="singleTop" />
-        <activity android:name=".activities.RegistrationActivity" />
-        <activity android:name=".activities.ForgotPassword" />
-        <activity android:name=".activities.LoginActivity" />
+        <activity android:name="com.rackluxury.paintings.activities.RegistrationActivity" />
+        <activity android:name="com.rackluxury.paintings.activities.ForgotPassword" />
+        <activity android:name="com.rackluxury.paintings.activities.LoginActivity" />
         <activity
-            android:name=".activities.HomeActivity"
+            android:name="com.rackluxury.paintings.activities.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activities.CategoriesDetailActivity"
+            android:name="com.rackluxury.paintings.activities.CategoriesDetailActivity"
             android:theme="@style/AppTheme.SlidrActivityTheme" />
-        <activity android:name=".activities.VideoActivity" />
+        <activity android:name="com.rackluxury.paintings.activities.VideoActivity" />
         <activity
-            android:name=".activities.ProfileActivity"
+            android:name="com.rackluxury.paintings.activities.ProfileActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".activities.UpdatePasswordActivity" />
-        <activity android:name=".activities.UpdateProfileActivity" />
-        <activity android:name=".activities.BillingActivity" />
-        <activity android:name=".activities.AboutUsActivity" />
-        <activity android:name=".activities.CompanyInfo" />
+        <activity android:name="com.rackluxury.paintings.activities.UpdatePasswordActivity" />
+        <activity android:name="com.rackluxury.paintings.activities.UpdateProfileActivity" />
+        <activity android:name="com.rackluxury.paintings.activities.BillingActivity" />
+        <activity android:name="com.rackluxury.paintings.activities.AboutUsActivity" />
+        <activity android:name="com.rackluxury.paintings.activities.CompanyInfo" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -79,7 +79,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".activities.RolexAppWidgetProvider">
+        <receiver android:name="com.rackluxury.paintings.activities.RolexAppWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
