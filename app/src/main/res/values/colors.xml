@@ -6,6 +6,10 @@
     <color name="black">#050505</color>
     <color name="red">#F32003</color>
     <color name="green">#12784A</color>
+    <color name="colorGreen">#12784A</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#EA0A0A</color>
 
 
     <color name="colorBackground">#FFFFFF</color>
@@ -42,13 +46,6 @@
 
     <color name="colorDetailDescription">#050505</color>
 
-
-
-
-    <color name="colorFacts1">#FFFFFF</color>
-    <color name="colorFacts2">#CBCC8160</color>
-    <color name="colorFacts3">#0C4A81</color>
-    <color name="colorFacts4">#FFFFFF</color>
 
     <color name="colorCompanyCellBackground">#FFFFFF</color>
     <color name="colorCompanyTitleBackground">#218055</color>

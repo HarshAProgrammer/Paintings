@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Kartik/AndroidStudioProjects/Paintings/app/src/main/res/drawable/avd_grey_heart.xml" value="0.1" />
+        <entry key="..\:/Users/Kartik/AndroidStudioProjects/Paintings/app/src/main/res/drawable/ic_reaction_happy.xml" value="0.1" />
+        <entry key="..\:/Users/Kartik/AndroidStudioProjects/Paintings/app/src/main/res/layout-land/activity_categories_detail.xml" value="0.1" />
+        <entry key="..\:/Users/Kartik/AndroidStudioProjects/Paintings/app/src/main/res/layout/activity_categories_detail_motion_scene_end.xml" value="0.15736040609137056" />
+        <entry key="..\:/Users/Kartik/AndroidStudioProjects/Paintings/app/src/main/res/layout/activity_categories_detail_motion_scene_start.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/Kartik/AndroidStudioProjects/Paintings/app/src/main/res/menu/categories_detail_menu.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/Kartik/AndroidStudioProjects/Rolex-53b95d0a7b7d4ef4b12639cce8a58e7ee194ce1c/app/src/main/res/menu/toolbar_search_expensive.xml" value="0.1" />
       </map>
     </option>

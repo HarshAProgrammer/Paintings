@@ -5,7 +5,6 @@
     <string name="second_splash_animation_description">Rolex Inc.</string>
 
     <string name="loginOrRegister_welcome_txt">Easiest way to\nfind the best Rolex Watches</string>
-    <string name="image_background_login_or_register">Image Background</string>
     <string name="login_loginOrRegister_btn_label">Login</string>
     <string name="get_started_loginOrRegister_btn_label">Get Started</string>
 
@@ -77,11 +76,8 @@ Privacy Policy\n\nLuxuryRack Inc. built the [Watches from Rolex] app as a Commer
     <string name="volume_on_off_layout_video">VolumeOnOff</string>
     <string name="thumbnail_layout_video">Thumbnail</string>
     <string name="toolbar_home">Rolex</string>
-    <string name="most_expensive_nav_home">Most Expensive</string>
-    <string name="images_nav_home">Image Library</string>
     <string name="profile_nav_home">Profile</string>
     <string name="buy_us_a_watch_nav_home">Buy Us A Watch</string>
-    <string name="facts_about_us_nav_home">Facts About Us</string>
     <string name="sign_out_nav_home">SignOut</string>
     <string name="share_nav_home">Share</string>
     <string name="like_us_on_facebook_nav_home">Like Us On Facebook</string>
@@ -94,27 +90,6 @@ Privacy Policy\n\nLuxuryRack Inc. built the [Watches from Rolex] app as a Commer
     <string name="save_image_detail_categories">Save Image</string>
     <string name="wallpaper_detail_categories">Set as Wallpaper</string>
 
-
-    <string name="rolex_main_image_expensive">Rolex Image</string>
-    <string name="rolex_name_expensive">Rolex Name</string>
-    <string name="ic_back_expensive">Back</string>
-    <string name="toolbar_expensive">Expensive Watches</string>
-    <string name="rolex_price_expensive">Rolex Price</string>
-    <string name="rolex_description_expensive">Rolex Description</string>
-    <string name="name_detail_expensive_detail">Rolex Watch Name</string>
-    <string name="expensive_rolex_watch_image_expensive_detail">Expensive Rolex Watch</string>
-    <string name="rolex_detail_expensive_description">Rolex Detail Description</string>
-    <string name="search_expensive">Search</string>
-    <string name="sort_expensive">Sort</string>
-    <string name="sort_by_price_expensive">Sort By Price</string>
-    <string name="price_low_to_high_expensive">Low to High</string>
-    <string name="price_high_to_low_expensive">High to Low</string>
-    <string name="sort_by_name_expensive">Sort By Name</string>
-    <string name="name_a_to_z_expensive">A to Z</string>
-    <string name="name_z_to_a_expensive">Z to A</string>
-    <string name="share_detail_expensive">Share</string>
-    <string name="save_image_detail_expensive">Save Image</string>
-    <string name="wallpaper_detail_expensive">Set as Wallpaper</string>
 
     <string name="update_profile_profile">Update Profile</string>
     <string name="user_image_profile">User Image</string>
@@ -130,17 +105,6 @@ Privacy Policy\n\nLuxuryRack Inc. built the [Watches from Rolex] app as a Commer
 
     <string name="new_password_update_password">New Password</string>
     <string name="button_update_password">Update Password</string>
-
-    <string name="images_toolbar_images">Images</string>
-    <string name="ic_images_back_images">Back</string>
-
-
-    <string name="fact_image_facts">Fact Image</string>
-    <string name="title_facts">Title</string>
-    <string name="fact_description_facts">Fact Description</string>
-
-
-    <string name="image_fact_detail">Image Fact Detail</string>
 
 
     <string name="buy_billing">Buy</string>
@@ -223,6 +187,12 @@ If you only want to treat it as an investment, a historical piece will be a bett
     <string name="image_terms_about_us">Image Terms</string>
     <string name="image_feedback_about_us">Image Feedback</string>
     <string name="app_widget">World of Rolex</string>
+    <string name="detail_categories_description">Categories Description</string>
+    <string name="watch_name_categories_detail">Watch name</string>
+    <string name="categories_detail_image">Categories Detail Image</string>
+    <string name="save_image">Save Image</string>
+    <string name="share">Share</string>
+    <string name="set_as_wallpaper">Set as wallpaper</string>
 
 
 </resources>
